@@ -8,6 +8,15 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Enter some text here : </label>
+      <input type="text" class="form-control" (input)=display(textBox.value) #textBox>
+      <div class="card" *ngIf="result">
+        <div class="card-body">
+          <h5 class="card-title">You entered following text:</h5>
+          <p class="card-text" class="alert alert-secondary">{{result}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

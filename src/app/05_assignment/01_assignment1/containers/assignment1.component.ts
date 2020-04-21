@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
-
+  result:string;
+  display(value:string):void{
+    this.result = value;
+  }
 }
